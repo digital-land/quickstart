@@ -1,109 +1,197 @@
 <!DOCTYPE html>
-<html lang="en" class="govuk-template ">
+<html lang="en" class="govuk-template">
   <head>
     <meta charset="utf-8">
-    <title>Getting started | Planning Data</title>
+    <title>Getting Started with Planning Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c"> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0b0c0c">
 
     
-	<link rel="shortcut icon" sizes="48x48" href="https://digital-land.github.io/images/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" sizes="32x32" href="https://digital-land.github.io/images/favicon-32x32.png" type="image/png">
-<link rel="shortcut icon" sizes="16x16" href="https://digital-land.github.io/images/favicon-16x16.png" type="image/png">
-<link rel="apple-touch-icon" href="https://digital-land.github.io/images/apple-touch-icon.png">
+  <link rel="shortcut icon" sizes="48x48" href="/static/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" sizes="32x32" href="/static/images/favicon-32x32.png" type="image/png">
+  <link rel="shortcut icon" sizes="16x16" href="/static/images/favicon-16x16.png" type="image/png">
+  <link rel="apple-touch-icon" href="/static/images/apple-touch-icon.png">
 
 
     
-	<meta name="digital-land:template" content="dlf-base.html">
-	
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-	
+	<meta name="digital-land:template" content="digital-land-frontend/base.jinja">
     
     
-    <meta property="og:image" content="https://digital-land.github.io/images/govuk-opengraph-image.png">
+  <link rel="stylesheet" href="https://design.planning.data.gov.uk/static/stylesheets/application.css">
+  <link rel="stylesheet" href="https://design.planning.data.gov.uk/static/stylesheets/vendor/accessible-autocomplete.css">
+  
+
+    
   </head>
-  <body class="govuk-template__body ">
-    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+  <body class="govuk-template__body">
+    <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
     
 
     
-      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+      
+<a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
     
 
     
-<!-- Cookie banner partial version 1.0.1 -->
-<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+  
+  <script>
+  // Wait for DOM content to be loaded and dptp to be initialized
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if dptp is available
+    if (window.dptp && window.dptp.cookies) {
+      window.acceptCookies = window.dptp.cookies.acceptCookies;
+      window.hideCookieBanner = window.dptp.cookies.hideCookieBanner;
+      window.hideCookieConfirmation = window.dptp.cookies.hideCookieConfirmation;
+    } else {
+      console.error('Cookie functions not available');
+    }
+  });
+</script>
 
-  <div id="cookie-banner" class="govuk-width-container">
+
+
+
+
+
+
+<div class="govuk-cookie-banner" data-nosnippet role="region" aria-label="Cookies on design.planning.data.gov.uk/"
+    
+   id="cookie-banner" aria-label="Cookies on design.planning.data.gov.uk" style="display: none" aria-hidden="true">
+  
+  <div class="govuk-cookie-banner__message govuk-width-container">
+
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <div class="cookie-banner__message govuk-!-margin-top-6">
-          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
-          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
-        </div>
-        <div class="cooke-banner__buttons govuk-grid-row">
-          <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
-          </div>
-          <div class="govuk-grid-column-one-half">
-            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
-          </div>
+        
+        <h2 class="govuk-cookie-banner__heading govuk-heading-m">
+          Cookies on design.planning.data.gov.uk
+        </h2>
+        
+        <div class="govuk-cookie-banner__content">
+          
+          <p class="govuk-body">We use some essential cookies to make this service work.</p>
+            <p class="govuk-body">We'd also like to use analytics cookies so we can understand how you use the service and make improvements.</p>
+          
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
-    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
-    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
-  </div>
+    
+    <div class="govuk-button-group">
+    
+      
+      <button value="accept" type="button" name="cookies" class="govuk-button" data-module="govuk-button"
+          
+              
+            
+          
+         onclick="acceptCookies({ essential: true, settings: false, usage: true, campaigns: false });">
+        Accept analytics cookies
+      </button>
+    
+      
+      <button value="reject" type="button" name="cookies" class="govuk-button" data-module="govuk-button"
+          
+              
+            
+          
+         onclick="acceptCookies({ essential: true, settings: false, usage: false, campaigns: false });">
+        Reject analytics cookies
+      </button>
+    
+      
+      <a class="govuk-link" href="cookies">Customise cookie preferences</a>
+    
+    </div>
+    
 
+  </div>
+  
 </div>
-<header id="global-header" class="govuk-header" data-module="govuk-header" role="banner">
-  <div class="govuk-header__container govuk-width-container">
-    <div class="header-proposition">
-      <div class="govuk-header__content">
-        <a href="/" class="govuk-header__link govuk-header__link--service-name">Planning and housing data in England</a>
-          <nav class="govuk-header__navigation" aria-label="Menu">
-            <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu" hidden>Menu</button>
-            <ul id="navigation" class="govuk-header__navigation-list">
-              <li class="govuk-header__navigation-item">
-                <a class="govuk-header__link" href="https://design.planning.data.gov.uk">Design data</a>
-              </li>
-              <li class="govuk-header__navigation-item">
-                <a class="govuk-header__link" href="https://www.planning.data.gov.uk/guidance/">Provide data</a>
-              </li>
-              <li class="govuk-header__navigation-item">
-                <a class="govuk-header__link" href="https://www.planning.data.gov.uk">Use data</a>
-              </li>
-            </ul>
-          </nav>
+
+
+  
+
+<div class="govuk-cookie-banner" data-nosnippet role="region" aria-label="Cookies on design.planning.data.gov.uk"
+    
+        
+      
+    
+        
+      
+    
+        
+      
+    
+   id="cookie-confirmation" style="display: none" aria-hidden="true">
+  
+  <div class="govuk-cookie-banner__message govuk-width-container">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        
+        <div class="govuk-cookie-banner__content">
+          
+          <p class="govuk-notification-banner__heading">
+              You have accepted additional cookies. You can <a class="govuk-notification-banner__link" href="/cookies">change your cookie settings</a> at any time.
+            </p>
+          
+        </div>
       </div>
     </div>
+
+    
+    <div class="govuk-button-group">
+    
+      
+      <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button"
+          
+              
+            
+          
+         onclick="hideCookieConfirmation();">
+        Hide cookie message
+      </a>
+    
+    </div>
+    
+
+  </div>
+  
+</div>
+
+
+
+  
+
+<header class="govuk-header dl-header app-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <a href="https://www.planning.data.gov.uk" class="govuk-header__link govuk-header__link--service-name">
+      Planning and housing data in England
+    </a>
   </div>
 </header>
 
+<div class="app-masthead">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters">
+        <h1 class="govuk-heading-xl app-masthead__title govuk-!-margin-bottom-2">
+          Getting started
+        </h1>
+        <p class="govuk-body-l govuk-!-margin-bottom-0 app-masthead__sub-title">
+          How to build applications and visualise planning and housing in England using <a href="https://www.planning.data.gov.uk/" class="govuk-link govuk-link--inverse">planning.data.gov.uk</a> 
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
-    
-      <div class="govuk-width-container ">
-        
-
-  
-    
-  
-
+  <div class="govuk-width-container">
 
         <main class="govuk-main-wrapper " id="main-content" role="main">
           
-  
-<div class="govuk-grid-row">
- <div class="govuk-grid-column-full">
-  <h1 class="govuk-heading-xl">Getting started with Planning Data</h1>
- </div>
-</div>
-
   
 <div class="govuk-grid-row">
  <div class="govuk-grid-column-full">
@@ -188,11 +276,8 @@ used to build this page is <a class="govuk-footer__link" href="https://github.co
   </div>
 </footer>
 
+<!-- include govuk frontend js -->
+<script src="/data-standards//assets/govuk-frontend/govuk-frontend-4.5.0.min.js"></script>
 
-    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
-	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
-	<script>window.GOVUKFrontend.initAll();</script>
-	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
-	<script>window.DLFrontend.polyfill();</script>
   </body>
 </html>
