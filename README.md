@@ -1,9 +1,12 @@
 # Quickstart pages for developers
 
-This repository contains documentation, examples and useful links for the [GDS and the Incubator for AI - Local Government Innovation Hackathon](https://www.eventbrite.co.uk/e/gds-and-the-incubator-for-ai-local-government-innovation-hackathon-tickets-1286436800099) 30 April - 1 May 2025.
+This repository contains documentation, examples and useful links for a developer to get started using https://planning.data.gov.uk
 
-* https://digital-land.github.io/quickstart/
-* https://github.com/orgs/digital-land/discussions/384
+> https://digital-land.github.io/quickstart/
+
+The guide was sketched out ahead of the [GDS and the Incubator for AI - Local Government Innovation Hackathon](https://www.eventbrite.co.uk/e/gds-and-the-incubator-for-ai-local-government-innovation-hackathon-tickets-1286436800099) 30 April - 1 May 2025.
+
+You can contribute to the [discussion on this guide](https://github.com/orgs/digital-land/discussions/384)
 
 # Licence
 
