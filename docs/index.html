@@ -114,16 +114,27 @@
   <h2 class="govuk-visually-hidden" id="app-sub-navigation-heading">Guidance navigation</h2>
     <h3 class="app-sub-navigation__theme">Contents</h3>
     <ul class="app-sub-navigation__section">
+        <li class="app-sub-navigation__section-item"><a class="app-sub-navigation__link" href="#documentation">Documentation</a></li>
         <li class="app-sub-navigation__section-item"><a class="app-sub-navigation__link" href="#quality">Data availabilty and quality</a></li>
         <li class="app-sub-navigation__section-item"><a class="app-sub-navigation__link" href="#licensing">Data licensing</a></li>
+        <li class="app-sub-navigation__section-item"><a class="app-sub-navigation__link" href="#code">Code</a></li>
         <li class="app-sub-navigation__section-item"><a class="app-sub-navigation__link" href="#licensing">Contributing</a></li>
     </ul>
  </div>
 
  <div class="govuk-grid-column-two-thirds" id="content_primary">
     <p class="govuk-body">
-    This page contains a series of notes and examples to help you get started building using <a href="https://www.planning.data.gov.uk" class="govuk-link">Planning Data</a>.
+    This page contains a series of links, notes, and examples to help you get started using <a href="https://www.planning.data.gov.uk" class="govuk-link">Planning Data</a>.
     </p>
+
+    <h1 class="govuk-heading-l" id="documentation">Documentation</h1>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a class="govuk-link" href="https://www.planning.data.gov.uk/docs">API documentation</a>
+      <li><a class="govuk-link" href="https://www.planning.data.gov.uk/dataset">Dataset documentation</a>
+      <li><a class="govuk-link" href="https://digital-land.github.io/specification/dataset/">Dataset specifications</a>
+      <li><a class="govuk-link" href="https://handbook.planning.data.gov.uk/">Team handbook</a>
+    </ul>
+
     <h1 class="govuk-heading-l" id="quality">Data availabilty and quality</h1>
     <p class="govuk-body">
     The Planning Data platform collects planning and housing data from a wide range of sources and transforms it into a consistent state across England.
@@ -139,9 +150,9 @@
     <img class="example" src="proportional-symbol-map.png" alt="A proportional symbol map showing the scale of digital programme funding in different LPA areas in England">
     -->
 
-    <h1 class="govuk-heading-l" id="licensing">Data licensing</h1>
+    <h1 class="govuk-heading-l" id="licensing">Open data</h1>
     <p class="govuk-body">
-    <p>The data is open, meaning anyone can view, build services using the data or download and analyse the data to inform investment and other decisions.</p>
+    <p>With a few exceptions, data on the platform is availabile under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence</a>, meaning anyone can view, build services using the data or download and analyse the data to inform investment and other decisions.</p>
     <p class="govuk-body">
     We believe making government planning and housing data easier to find, use and trust will lead to:
     </p>
@@ -152,6 +163,19 @@
         <li>Better relationships between communities and development</li>
     </ul>
 
+    <h1 class="govuk-heading-l" id="code">Open source code</h1>
+    <p class="govuk-body">
+    The source code behind the Planning Data is available as open source. The team code in the open at 
+      <a class="govuk-link" href="https://github.com/digital-planning">github.com/digital-planning</a>:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a class="govuk-link" href="https://github.com/digital-land/digital-land.info">digital-land.info</a> &mdash; the planning.data.gov.uk website
+      <li><a class="govuk-link" href="https://github.com/digital-land/submit">submit</a> &mdash; how we give feedback to data providers
+      <li><a class="govuk-link" href="https://github.com/digital-land/specification">specification</a> &mdash; where we manage our specifications
+      <li><a class="govuk-link" href="https://github.com/digital-land/config">config</a> &mdash; where we configure our data sources and data pipeline
+      <li><a class="govuk-link" href="https://github.com/digital-land/digital-land-python">digital-land-python</a> &mdash; our data pipeline code
+    </ul>
+
     <h1 class="govuk-heading-l">Contributing</h1>
     <p class="govuk-body">
     We work in the open, and welcome your feedback and contributions. You can help:
@@ -160,7 +184,7 @@
     <ul class="govuk-list govuk-list--bullet">
         <li><a href="https://design.planning.data.gov.uk/how-to-help-develop-a-new-dataset" class="govuk-link">identify missing data</a>, 
             and inform the design of the datasets we put on the platform by 
-            <a href="https://design.planning.data.gov.uk/how-to-contribute-to-the-data-design-process">participating in the data design process</a>
+            <a href="https://design.planning.data.gov.uk/how-to-contribute-to-the-data-design-process" class="govuk-link">participating in the data design process</a>
         <li>prioritise our work by commenting on our <a href="https://github.com/orgs/digital-land/projects" class="govuk-link">project backlogs</a>
           <li>improve this guidance through by making a pull-request to the <a href="https://github.com/digital-land/quickstart" class="govuk-link">quickstart repository</a> or participating in the <a href="https://github.com/orgs/digital-land/discussions/384">quickstart GitHub discussion</a>.</li>
     </ul>
