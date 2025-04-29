@@ -5,36 +5,22 @@
     <title>Getting Started with Planning Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
-
-    
-  <link rel="shortcut icon" sizes="48x48" href="/static/images/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" sizes="32x32" href="/static/images/favicon-32x32.png" type="image/png">
-  <link rel="shortcut icon" sizes="16x16" href="/static/images/favicon-16x16.png" type="image/png">
-  <link rel="apple-touch-icon" href="/static/images/apple-touch-icon.png">
-
-
-    
-	<meta name="digital-land:template" content="digital-land-frontend/base.jinja">
-    
-    
-  <link rel="stylesheet" href="https://design.planning.data.gov.uk/static/stylesheets/application.css">
-  <link rel="stylesheet" href="https://design.planning.data.gov.uk/static/stylesheets/vendor/accessible-autocomplete.css">
-  
-
-    
+    <link rel="shortcut icon" sizes="48x48" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" sizes="32x32" href="/static/images/favicon-32x32.png" type="image/png">
+    <link rel="shortcut icon" sizes="16x16" href="/static/images/favicon-16x16.png" type="image/png">
+    <link rel="apple-touch-icon" href="/static/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://design.planning.data.gov.uk/static/stylesheets/application.css">
+    <link rel="stylesheet" href="https://design.planning.data.gov.uk/static/stylesheets/vendor/accessible-autocomplete.css">
   </head>
   <body class="govuk-template__body">
+<style>
+  img.example {
+    max-width: 100%;
+    max-height: 80vh;
+  }
+</style>
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
-    
-
-    
-      
-<a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
-
-    
-
-    
-  
+    <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
   <script>
   // Wait for DOM content to be loaded and dptp to be initialized
   document.addEventListener('DOMContentLoaded', function() {
@@ -48,119 +34,53 @@
     }
   });
 </script>
-
-
-
-
-
-
-
 <div class="govuk-cookie-banner" data-nosnippet role="region" aria-label="Cookies on design.planning.data.gov.uk/"
-    
    id="cookie-banner" aria-label="Cookies on design.planning.data.gov.uk" style="display: none" aria-hidden="true">
-  
   <div class="govuk-cookie-banner__message govuk-width-container">
-
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        
         <h2 class="govuk-cookie-banner__heading govuk-heading-m">
           Cookies on design.planning.data.gov.uk
         </h2>
-        
         <div class="govuk-cookie-banner__content">
-          
           <p class="govuk-body">We use some essential cookies to make this service work.</p>
             <p class="govuk-body">We'd also like to use analytics cookies so we can understand how you use the service and make improvements.</p>
-          
         </div>
       </div>
     </div>
-
-    
     <div class="govuk-button-group">
-    
-      
       <button value="accept" type="button" name="cookies" class="govuk-button" data-module="govuk-button"
-          
-              
-            
-          
          onclick="acceptCookies({ essential: true, settings: false, usage: true, campaigns: false });">
         Accept analytics cookies
       </button>
-    
-      
       <button value="reject" type="button" name="cookies" class="govuk-button" data-module="govuk-button"
-          
-              
-            
-          
          onclick="acceptCookies({ essential: true, settings: false, usage: false, campaigns: false });">
         Reject analytics cookies
       </button>
-    
-      
       <a class="govuk-link" href="cookies">Customise cookie preferences</a>
-    
     </div>
-    
-
   </div>
-  
 </div>
-
-
-  
-
 <div class="govuk-cookie-banner" data-nosnippet role="region" aria-label="Cookies on design.planning.data.gov.uk"
-    
-        
-      
-    
-        
-      
-    
-        
-      
-    
    id="cookie-confirmation" style="display: none" aria-hidden="true">
-  
   <div class="govuk-cookie-banner__message govuk-width-container">
-
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        
         <div class="govuk-cookie-banner__content">
-          
           <p class="govuk-notification-banner__heading">
               You have accepted additional cookies. You can <a class="govuk-notification-banner__link" href="/cookies">change your cookie settings</a> at any time.
             </p>
-          
         </div>
       </div>
     </div>
-
-    
     <div class="govuk-button-group">
-    
-      
       <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button"
-          
-              
-            
-          
          onclick="hideCookieConfirmation();">
         Hide cookie message
       </a>
-    
     </div>
-    
-
   </div>
-  
 </div>
-
 <header class="govuk-header dl-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <a href="https://www.planning.data.gov.uk" class="govuk-header__link govuk-header__link--service-name">
@@ -184,39 +104,40 @@
   </div>
 </div>
 
-  <div class="govuk-width-container">
-
-        <main class="govuk-main-wrapper " id="main-content" role="main">
-          
-  
-<div class="govuk-grid-row">
-       <div class="govuk-grid-column-one-third" id="content_secondary">
-      <a href="#content_primary" class="govuk-visually-hidden">Skip guidance navigation</a>
-      
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third" id="content_secondary">
+        <a href="#content_primary" class="govuk-visually-hidden">Skip guidance navigation</a>
 
 <nav class="app-sub-navigation" aria-labelledby="app-sub-navigation-heading">
   <h2 class="govuk-visually-hidden" id="app-sub-navigation-heading">Guidance navigation</h2>
-  
-    
-      <h3 class="app-sub-navigation__theme">Contents</h3>
-      
+    <h3 class="app-sub-navigation__theme">Contents</h3>
     <ul class="app-sub-navigation__section">
         <li class="app-sub-navigation__section-item"><a class="app-sub-navigation__link" href="#quality">Data availabilty and quality</a></li>
         <li class="app-sub-navigation__section-item"><a class="app-sub-navigation__link" href="#licensing">Data licensing</a></li>
         <li class="app-sub-navigation__section-item"><a class="app-sub-navigation__link" href="#licensing">Contributing</a></li>
     </ul>
  </div>
- <div class="govuk-grid-column-two-thirds" id="content_primary">
 
+ <div class="govuk-grid-column-two-thirds" id="content_primary">
+    <p class="govuk-body">
+    This page contains a series of notes and examples to help you get started building using <a href="https://www.planning.data.gov.uk" class="govuk-link">Planning Data</a>.
+    </p>
     <h1 class="govuk-heading-l" id="quality">Data availabilty and quality</h1>
     <p class="govuk-body">
     The Planning Data platform collects planning and housing data from a wide range of sources and transforms it into a consistent state across England.
     </p>
-    <ul class="govuk-list govuk-list--bullet">
-        <li>Remember the Planning Data Platform is in development</li>
-        <li>The data does not yet cover all of England
-        <li>The data we have collected is not yet complete &mdash; there may be things you expect to see that are currently missing
-    </ul>
+    <p class="govuk-body">
+    Note the Planning Data Platform is in development. 
+    Where we have data, it may not yet cover the whole country&mdash;there may be things you expect to see that are currently missing.
+    </p>
+
+    <!--
+    <h1 class="govuk-heading-l" id="projects-and-funding">Projects and funding</h1>
+
+    <img class="example" src="proportional-symbol-map.png" alt="A proportional symbol map showing the scale of digital programme funding in different LPA areas in England">
+    -->
 
     <h1 class="govuk-heading-l" id="licensing">Data licensing</h1>
     <p class="govuk-body">
@@ -233,22 +154,19 @@
 
     <h1 class="govuk-heading-l">Contributing</h1>
     <p class="govuk-body">
-    We work in the open, and welcome your feedback and contributions. You can help us:
+    We work in the open, and welcome your feedback and contributions. You can help:
     </p>
 
     <ul class="govuk-list govuk-list--bullet">
-        <li><a href="https://design.planning.data.gov.uk/how-to-help-develop-a-new-dataset" class="govuk-link govuk-link">identify missing data</a>, 
+        <li><a href="https://design.planning.data.gov.uk/how-to-help-develop-a-new-dataset" class="govuk-link">identify missing data</a>, 
             and inform the design of the datasets we put on the platform by 
-            <a href="https://design.planning.data.gov.uk/how-to-contribute-to-the-data-design-process">participating in the data design process</a><li>
-    <li>prioritise our work by commenting on our backlogs and roadmap at 
-        https://github.com/orgs/digital-land/projects</li>
-    <li>improve this guidance through by making a pull-request to the quickstart repository or participating in the <a href="https://github.com/orgs/digital-land/discussions/384">quickstart GitHub discussion</a>.</li>
+            <a href="https://design.planning.data.gov.uk/how-to-contribute-to-the-data-design-process">participating in the data design process</a>
+        <li>prioritise our work by commenting on our <a href="https://github.com/orgs/digital-land/projects" class="govuk-link">project backlogs</a>
+        <li>improve this guidance through by making a pull-request to the quickstart repository or participating in the <a href="https://github.com/orgs/digital-land/discussions/384">quickstart GitHub discussion</a>.</li>
     </ul>
 
     <!--
     https://www.planning.data.gov.uk/docs
-
-
     https://www.legislation.gov.uk/ukpga/2023/55/part/3/chapter/1/enacted
     https://design.planning.data.gov.uk/
     https://design.planning.data.gov.uk/advisory-group
@@ -270,6 +188,8 @@
 
     https://digital-land.github.io/land-calculator/
 
+    https://github.com/digital-land/quality-challenge/tree/main
+
     Choropleth
 
     Model Context Protocol(MCP)
@@ -280,13 +200,13 @@
     Extract
     https://github.com.mcas.ms/digital-land/digital-land/issues/360
 
+    https://github.com/digital-land/planning-application-data-specification
 
     Other useful data sources
     https://environment.data.gov.uk/
     https://geoportal.statistics.gov.uk/
     https://osdatahub.os.uk/
-
-    Interesting case-studies
+    https://automaticknowledge.co.uk/resources/
     https://russellcurtis.co.uk/2024/09/28/ai-green-belt/
 
     -->
@@ -304,39 +224,32 @@
   <div class="govuk-width-container ">
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
           <h2 class="govuk-visually-hidden">Support links</h2>
               <ul class="govuk-footer__inline-list">
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/cookies">
                       Cookies
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/accessibility-statement">
                       Accessibility statement
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/design-system">
                       Design system
                     </a>
                   </li>
-                
               </ul>
-            
           
 <div class="govuk-footer__meta-custom">
 The <a class="govuk-footer__link" href="https://github.com/digital-land/quickstart/">software</a> and 
 <a class="govuk-footer__link" href="https://github.com/digital-land/quickstart/">data</a>
 used to build this page is <a class="govuk-footer__link" href="https://github.com/digital-land/quickstart/blob/master/LICENSE">open source</a>.
 </div>
-
           
-    <footer class="govuk-footer " role="contentinfo">
+<footer class="govuk-footer " role="contentinfo">
   <div class="govuk-width-container ">
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
@@ -368,9 +281,7 @@ used to build this page is <a class="govuk-footer__link" href="https://github.co
     </div>
   </div>
 </footer>
-
-<!-- include govuk frontend js -->
-<script src="/data-standards//assets/govuk-frontend/govuk-frontend-4.5.0.min.js"></script>
-
+  <!-- include govuk frontend js -->
+  <script src="/data-standards//assets/govuk-frontend/govuk-frontend-4.5.0.min.js"></script>
   </body>
 </html>
