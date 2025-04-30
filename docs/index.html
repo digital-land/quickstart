@@ -137,14 +137,15 @@
     Our data includes ONS/GSS codes for the
     <a class="govuk-link" href="https://www.planning.data.gov.uk/dataset/local-authority-district">local authority district</a>,
     <a class="govuk-link" href="https://www.planning.data.gov.uk/dataset/national-park">national park</a> area,
-    <a class="govuk-link" href="https://www.planning.data.gov.uk/dataset/local-planning-authority">local planning authrity</a> boundary,
+    <a class="govuk-link" href="https://www.planning.data.gov.uk/dataset/local-planning-authority">local planning authority</a> boundary,
     and other geographies, along with  wikipedia, wikidata useful when reconciling data from different sources.
     </p>
     <!-- how to reconcile names -->
 
     <h2 class="govuk-heading-l" id="lpa">Local Planning Authorities</h2>
     <p class="govuk-body">
-    In England the set of organisations responsible for planning includes some, but not all 
+    In England a Local Planning Authority (LPA) is an organisation responsible for planning within an area.
+    Organisations who act as the LPA include some, but not all 
     <a class="govuk-link" href="https://www.planning.data.gov.uk/dataset/local-authority">Local Authorities</a>,
     <a class="govuk-link" href="https://www.planning.data.gov.uk/dataset/national-park-authority">National Park Authorities</a> and
     <a class="govuk-link" href="https://www.planning.data.gov.uk/dataset/development-corporation">Development Corporations</a>.
@@ -153,19 +154,22 @@
     Selecting and filtering <a class="govuk-link" href="https://github.com/digital-land/specification/blob/main/specification/role-organisation.csv">role-organisations</a> with the role <code>local-planning-authority</code> and a blank <code>end-date</code> the current list of  
     <a class="govuk-link" href="https://datasette.planning.data.gov.uk/digital-land/role_organisation?_sort=rowid&end_date__isblank=1&role__exact=local-planning-authority">active Local Planning Authorities</a> (311 organisations).
     </p>
-    <!--
-    <p class="govuk-body">
-    The boundary for planning applications is Local Planning Authority 
-    </p>
-    -->
-    
-
-    <p class="govuk-body">
-    </p>
 
     <h2 class="govuk-heading-l" id="local-plans">Local plans</h2>
     <p class="govuk-body">
-    <a class="govuk-link" href="https://local-plans-prototype.herokuapp.com/">local-plans-prototype</a>
+    We are in the process of developing a <a href="https://digital-land.github.io/specification/specification/local-plan/">specification</a> 
+    for LPAs to provide data about their local plan, with some data on the platform:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li><a class="govuk-link" href="https://www.planning.data.gov.uk/dataset/local-plan">local-plan</a> 
+        <li><a class="govuk-link" href="https://www.planning.data.gov.uk/dataset/local-plan-boundary">local-plan-boundary</a> 
+        <li><a class="govuk-link" href="https://www.planning.data.gov.uk/dataset/local-plan-document">local-plan-document</a> 
+        <li><a class="govuk-link" href="https://www.planning.data.gov.uk/dataset/local-plan-timetable">local-plan-timetable</a> 
+    </ul>
+
+    <p class="govuk-body">
+    In the meantime our
+    <a class="govuk-link" href="https://local-plans-prototype.herokuapp.com/local-plans">local plans prototype</a> has information about current local plans including the target hosing number extracted from the documents available in <a href="https://local-plans-prototype.herokuapp.com/local-plans/local-plan-data.csv">single CSV file</a>.
     </p>
 
     <h2 class="govuk-heading-l" id="planning-considerations">Planning considerations</h2>
